@@ -1,0 +1,749 @@
+@use "layout";
+@use "bootstrap";
+@use "header";
+@use "hambergur";
+@use "footer";
+@use "animate";
+
+$dark-blue: #1872c5;
+$dark-blue-2: #003085;
+$light-blue: #11bcea;
+$base-red: #ed1c24;
+$button-red: #ec1c24;
+$base-green: #5ec262;
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $dark-blue;
+  color: #fff;
+  text-align: center !important;
+  transition: all 0.5s ease;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: $base-red;
+  transition: all 0.5s ease !important;
+}
+
+.swiper-button-next {
+  left: 5% !important;
+}
+
+.swiper-button-prev {
+  right: 5% !important;
+}
+
+.button {
+  display: inline-block;
+  width: 80px;
+  height: 20px;
+  border-radius: 13px;
+  border: 1px solid $base-green;
+  color: gray;
+  background-color: #fff;
+  font-size: 12px;
+}
+
+.button:hover {
+  background-color: $base-green;
+  color: #fff;
+}
+
+.fist-serction {
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 65%;
+  }
+  .swiper-slide {
+    position: relative;
+
+    .box {
+      position: absolute;
+      z-index: 10;
+      font-size: 14px;
+    }
+  }
+}
+
+.second-section {
+  background: $dark-blue url(../IMAGES/snow2.png);
+  height: auto;
+  position: relative;
+  text-align: center;
+
+  .swiper-button-next {
+    left: 1% !important;
+    top: 50%;
+  }
+
+  .swiper-button-prev {
+    right: 1% !important;
+    top: 50%;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 25px;
+    height: 25px;
+    border-radius: 9px;
+    background-color: $button-red;
+    color: #fff;
+    text-align: center !important;
+    transition: all 0.5s ease;
+    opacity: 0.5;
+  }
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    opacity: 1;
+    transition: all 0.5s ease !important;
+  }
+
+  .text-box {
+    position: absolute;
+    top: 5%;
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 250px;
+    height: 10rem;
+    border: 2px solid $dark-blue-2;
+    text-align: center;
+    z-index: 40;
+
+    p {
+      color: gray;
+      font-weight: bold;
+      font-size: 15px;
+    }
+  }
+
+  .pink-bg {
+    background-color: #f2e8f3e6;
+    .first-p {
+      color: #8b4e68;
+      font-size: 16px;
+    }
+  }
+
+  .blue-bg {
+    background: #d2dde7cc;
+    .first-p {
+      color: $dark-blue-2;
+      font-size: 16px;
+    }
+  }
+
+  .green-bg {
+    background: rgba(165, 214, 188, 0.8);
+    .first-p {
+      color: #20581e;
+      font-size: 16px;
+    }
+  }
+}
+.third-section {
+  background: $dark-blue url(../IMAGES/snow2.png);
+  height: auto;
+  position: relative;
+  .swiper-slide {
+    background: inherit;
+    .blue-hover {
+      height: 2.5rem;
+      a {
+        color: $dark-blue;
+        line-height: 40px;
+      }
+    }
+    .blue-hover:hover {
+      a {
+        color: #fff;
+      }
+      background-color: $light-blue !important;
+
+      transition: cubic-bezier(0, 1, 1, 1) 0.25s;
+    }
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 25px;
+    height: 25px;
+    border-radius: 9px;
+    background-color: $button-red;
+    color: #fff;
+    text-align: center !important;
+    transition: all 0.5s ease;
+    opacity: 0.5;
+  }
+  .swiper-button-next {
+    left: 0 !important;
+  }
+
+  .swiper-button-prev {
+    right: 0 !important;
+  }
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    opacity: 1;
+    transition: all 0.5s ease !important;
+  }
+}
+.fourth-section {
+  background: url(../IMAGES/snow2.png);
+  height: auto;
+  h6 {
+    width: 160px;
+    height: 48px;
+    border-radius: 30px;
+    background-color: #1872c5;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+    line-height: 30px;
+    font-weight: bold;
+  }
+
+  .swiper-slide {
+    min-height: 300px !important;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, .1);
+    position: relative;
+    .fridge {
+      width: 180px;
+    }
+    .border-before::before {
+      content: "";
+      width: 40%;
+      height: 4px;
+      border-radius: 5px;
+      background-color: #1872c5;
+      position: absolute;
+      left: 80px;
+    }
+    p {
+      color: #1872c5;
+    }
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 40% !important;
+  }
+  .swiper-button-next {
+    left: 0 !important;
+  }
+
+  .swiper-button-prev {
+    right: 0 !important;
+  }
+}
+.fifth-section {
+  background: $dark-blue url(../IMAGES/snow2.png);
+  height: auto;
+  h6 {
+    width: 160px;
+    height: 48px;
+    border-radius: 30px;
+    background-color: $base-red;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+    line-height: 30px;
+    font-weight: bold;
+  }
+
+  .swiper-slide {
+    .border-before::before {
+      content: "";
+      width: 40%;
+      height: 4px;
+      border-radius: 5px;
+      background-color: #1872c5;
+      position: absolute;
+      left: 80px;
+    }
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-color: $base-red;
+    top: 40% !important;
+  }
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    background-color: $dark-blue;
+  }
+  .swiper-button-next {
+    left: 0 !important;
+  }
+
+  .swiper-button-prev {
+    right: 0 !important;
+  }
+}
+.sixth-section {
+  background: url(../IMAGES/snow2.png);
+  height: auto;
+  background-size: cover;
+  .swiper-slide {
+    position: relative !important;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: calc((50% - 50px) / 2) !important;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      border: 1px solid $dark-blue;
+    }
+    img:hover {
+      border: 1px solid $base-red;
+    }
+  }
+  .swiper-button-next {
+    left: 0 !important;
+  }
+
+  .swiper-button-prev {
+    right: 0 !important;
+  }
+}
+.seventh-section {
+  background: url(../IMAGES/17_orig.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & > div {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    background-color: #fff;
+    opacity: 0.8;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.16);
+    h6{
+      font-size: 14px;
+      opacity: 0.6;
+    }
+    &>.input-group {
+    
+      height: 80px !important;
+      .btn {
+        right: -20px;
+        z-index: 999;
+      }
+      .form-control {
+        border-top-right-radius: 35px !important;
+        border-bottom-right-radius: 35px !important;
+        border-color: $dark-blue;
+        border-left: none !important;
+        overflow: hidden;
+      }
+      .form-control:focus {
+        box-shadow: none;
+      }
+      #button-addon1 {
+        border-radius: 35px;
+        background-color: #17bf09;
+        color: #ffffff;
+      }
+      #button-addon1:hover {
+        background-color: $dark-blue;
+      }
+    }
+  }
+}
+.eighth-section {
+  background: $dark-blue url(../IMAGES/snow2.png);
+  height: 15rem;
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 25px;
+    height: 25px;
+    border-radius: 9px;
+    background-color: $button-red;
+    color: #fff;
+    text-align: center !important;
+    transition: all 0.5s ease;
+    opacity: 0.5;
+  }
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    opacity: 1;
+    transition: all 0.5s ease !important;
+  }
+  .swiper-slide{
+    background-color: transparent !important;
+  }
+  .b-white {
+    border-right: 2px solid #ffffff;
+  }
+  .brd-bottom:hover {
+    border-bottom: 2px solid #ffffff;
+    border-radius: 6px;
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: $dark-blue;
+    color: #fff;
+    text-align: center !important;
+    transition: all 0.5s ease;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    background-color: $base-red;
+    transition: all 0.5s ease !important;
+  }
+
+  .swiper-button-next {
+    left: 5% !important;
+  }
+
+  .swiper-button-prev {
+    right: 5% !important;
+  }
+
+  .button {
+    width: 120px;
+    height: 30px;
+    border-radius: 13px;
+    border: 1px solid $base-green;
+    font-size: 16px;
+    transform: translate(-95%, 45%);
+  }
+
+  .second-section {
+    .text-box {
+      top: 20%;
+      margin-top: 1rem;
+      padding: 1rem;
+      width: 300px;
+      height: 10.5rem;
+      border: 2px solid $dark-blue-2;
+      text-align: center;
+      z-index: 40;
+
+      .button {
+        transform: translate(-50%, 50%);
+      }
+
+      .pink-bg {
+        right: 7%;
+        top: 20%;
+        .first-p {
+          font-size: 25px;
+        }
+      }
+
+      .blue-bg {
+        right: 40%;
+        .first-p {
+          font-size: 25px;
+        }
+      }
+
+      .green-bg {
+        right: 73.5%;
+        .first-p {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+  .third-section {
+    .swiper-slide {
+      .blue-hover {
+        height: 2.5rem;
+        a {
+          color: $dark-blue;
+          line-height: 40px;
+        }
+      }
+      .blue-hover:hover {
+        a {
+          color: #fff;
+        }
+        background-color: $light-blue !important;
+
+        transition: cubic-bezier(0, 1, 1, 1) 0.25s;
+      }
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 25px;
+      height: 25px;
+      border-radius: 9px;
+      background-color: $button-red;
+      color: #fff;
+      text-align: center !important;
+      transition: all 0.5s ease;
+      opacity: 0.5;
+    }
+    .swiper-button-next {
+      left: 0 !important;
+    }
+
+    .swiper-button-prev {
+      right: 0 !important;
+    }
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+      opacity: 1;
+      transition: all 0.5s ease !important;
+    }
+  }
+  .fourth-section {
+    background: url(../IMAGES/snow2.png);
+    height: auto;
+    h6 {
+      width: 160px;
+      height: 48px;
+      border-radius: 30px;
+      background-color: #1872c5;
+      color: #fff;
+      text-align: center;
+      padding: 0.5rem;
+      line-height: 30px;
+      font-weight: bold;
+    }
+
+    .swiper-slide {
+      min-height: 300px !important;
+      box-shadow: 1px 2px 3px rgba(0, 0, 0, .1);
+      position: relative;
+      .fridge {
+        width: 180px;
+      }
+      .border-before::before {
+        content: "";
+        width: 40%;
+        height: 4px;
+        border-radius: 5px;
+        background-color: #1872c5;
+        position: absolute;
+        left: 85px;
+      }
+      p {
+        color: #1872c5;
+      }
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      top: 40% !important;
+    }
+    .swiper-button-next {
+      left: 0 !important;
+    }
+
+    .swiper-button-prev {
+      right: 0 !important;
+    }
+  }
+  .fifth-section {
+    background: $dark-blue url(../IMAGES/snow2.png);
+    height: auto;
+    h6 {
+      width: 160px;
+      height: 48px;
+      border-radius: 30px;
+      background-color: $base-red;
+      color: #fff;
+      text-align: center;
+      padding: 0.5rem;
+      line-height: 30px;
+      font-weight: bold;
+    }
+    .swiper-slide {
+      box-shadow: 1px 2px 3px rgba(0, 0, 0, .1);
+      .border-before::before {
+        content: "";
+        width: 40%;
+        height: 4px;
+        border-radius: 5px;
+        background-color: #1872c5;
+        position: absolute;
+        left: 90px;
+      }
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      background-color: $base-red;
+      top: 40% !important;
+    }
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+      background-color: $dark-blue;
+    }
+    .swiper-button-next {
+      left: 0 !important;
+    }
+
+    .swiper-button-prev {
+      right: 0 !important;
+    }
+  }
+  .sixth-section {
+    background: url(../IMAGES/snow2.png);
+    height: auto;
+    background-size: cover;
+    .swiper-slide {
+      position: relative !important;
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      height: calc((50% - 50px) / 2) !important;
+
+      /* Center slide text vertically */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        border: 1px solid $dark-blue;
+      }
+      img:hover {
+        border: 1px solid $base-red;
+      }
+    }
+    .swiper-button-next {
+      left: 0 !important;
+    }
+
+    .swiper-button-prev {
+      right: 0 !important;
+    }
+  }
+  .seventh-section {
+    background: url(../IMAGES/17_orig.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > div {
+      width: 700px;
+      height: 140px;
+      border-radius: 70px;
+      background-color: #fff;
+      opacity: 0.8;
+      padding: 30px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.16);
+      .input-group {
+        width: 500px;
+
+        .btn {
+          right: -20px;
+          z-index: 999;
+        }
+        .form-control {
+          border-top-right-radius: 35px !important;
+          border-bottom-right-radius: 35px !important;
+          border-color: $dark-blue;
+          border-left: none !important;
+          overflow: hidden;
+        }
+        .form-control:focus {
+          box-shadow: none;
+        }
+        #button-addon1 {
+          border-radius: 35px;
+          background-color: #17bf09;
+          color: #ffffff;
+        }
+        #button-addon1:hover {
+          background-color: $dark-blue;
+        }
+      }
+    }
+  }
+  .eighth-section {
+    background: $dark-blue url(../IMAGES/snow2.png);
+    height: 15rem;
+    .b-white {
+      border-right: 2px solid #ffffff;
+    }
+    .brd-bottom:hover {
+      border-bottom: 2px solid #ffffff;
+      border-radius: 6px;
+      width: 90%;
+    }
+  }
+}

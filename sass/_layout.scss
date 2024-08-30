@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box !important;
+    padding: 0;
+    margin: 0;
+    @font-face {
+        font-family: Tahoma, Arial, sans-serif !important;
+        src: url(../css/font/Tahoma-Font/Tahoma\ Regular\ font.ttf);
+    }
+}
+body{
+    font-family: Tahoma , Arial, sans-serif !important;
+}
+[lang="fa-IR"]{
+    direction: rtl !important;
+}
+.rtl{
+    direction: rtl !important;
+}
+a{
+    text-decoration: none !important;
+}
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100% !important;
+}

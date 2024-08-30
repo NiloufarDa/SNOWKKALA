@@ -1,0 +1,54 @@
+  
+.btn2{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: -0.5rem;
+    left: 10px;
+    transition-duration: 0.5s;
+    transform: scale(0.5);
+}
+.btn2.open{
+//   left: auto;
+//   right: 10px;
+  transition: 0.5s;
+}
+.btn2 .icon{ 
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 8px;
+    width: 60px;
+    top: 30px;
+    background-color: #ffffff;
+}
+.btn2 .icon::before{
+    transition-duration: 0.5s;
+    position: absolute;
+    width:60px;
+    height:8px ;
+    background-color: #ffffff;
+    content: "";
+    top:  -20px;
+}
+.btn2 .icon::after{   
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 60px;
+    height:8px;
+    background-color: #ffffff;
+    content: "";
+    top: 20px;
+}
+.btn2.open .icon{
+    transition-duration: 0.5s;
+    background: transparent;
+}  
+.btn2.open .icon::before{
+    transform: rotateZ(45deg) scaleX(1.25) translate(13px, 13px);
+}
+.btn2.open .icon::after{
+    transform: rotateZ(-45deg) scaleX(1.25) translate(12px, -12px);
+}
+.btn2.open .icon:hover{
+    cursor: pointer;
+}

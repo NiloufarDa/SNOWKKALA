@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اسنو کالا</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="IMAGES/logo.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid px-md-5 px-2 mt-3">
+            <nav class="d-flex flex-wrap align-items-center justify-content-between">
+                <div class="d-flex align-items-center justify-content-center gap-3">
+                    <a href="#">
+                        <img src="IMAGES/فروشگاه-اسنو-کالا.png" alt="logo">
+                    </a>
+                    <!-- عدم نمایش در موبایل -->
+                    <ul class="d-md-flex d-none align-items-center justify-content-center gap-2  mt-4 right-menu">
+                        <li class="parent">
+                            <a href="#">
+                                محصولات
+                                <i class="bi bi-chevron-down toggle-dropdown"></i>
+                            </a>
+                            <ul class=" child">
+                                <li><a href="#">یخچال و فریزر</a></li>
+                                <li><a href="#"> تلویزیون</a></li>
+                                <li><a href="#">ماشین ظرفشویی</a></li>
+                                <li><a href="#">اجاق گاز</a></li>
+                                <li><a href="#">ماشین لباسشویی</a></li>
+                                <li><a href="#">جاروبرقی</a></li>
+                            </ul>
+                        </li>
+                        <li class="parent">
+                            <a href="#">
+                                درباره ما
+                                <i class="bi bi-chevron-down toggle-dropdown"></i>
+                            </a>
+                            <ul class="child">
+                                <li><a href="#">پاسخ به پرسش متداول</a></li>
+                                <li><a href="#">رویه های بازگرداندن کالا</a></li>
+                                <li><a href="#">شرایط استفاده</a></li>
+                                <li><a href="#">حریم خصوصی</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="last">تماس با ما</a>
+                        </li>
+                    </ul>
+                    <ul class="d-flex align-items-center gap-3 me-5 mb-0 left-menu">
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-lock-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-person-fill"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="d-flex  align-items-center gap-4">
+                    
+                    <form action="#" method="get" class="d-flex align-items-center gap-md-3 gap-1 ">
+                        <div class="input-group search">
+                            <input type="search" name="search" id="search" class="form-control">
+                            <span class="input-group-text">
+                                <i class="bi bi-search"></i>
+                            </span>
+                        </div>
+                        <div class="input-group text overflow-hidden">
+                            <input type="text" name="text" id="text" class="form-control" placeholder="سبد خرید">
+                            <span class="input-group-text cart">
+                                <i class="bi bi-cart2"></i>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- هدر موبایل با آیکون همبرگر -->
+ <header class="d-flex align-items-center d-md-none container-fluid z-3 my-2 mobileMenu">
+        <span class="text-white fw-bold">اسنو کالا</span>
+        <div id="menu">
+            <div class="menu btn2" data-menu="2">
+                <div class="icon"></div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <section class="container-fluid fist-serction p-0 ">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide d-flex align-items-center justify-content-center">
+                        <img src="IMAGES/2_orig.jpg" alt="... " class="w-100">
+                        <div class="col-12 col-md-4  box d-none d-md-block">
+                            <p class="text-white fw-bold">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                صنعت چاپ و با استفاده از طراحان گرافیک
+                                است.
+                            </p>
+                            <a href="#" class="button">بیشتر بدانید!</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex align-items-center justify-content-center">
+                        <img src="IMAGES/2_orig.jpg" alt="...">
+                        <div class="col-12 col-md-4  box  d-none d-md-block">
+                            <p class="text-white fw-bold">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                صنعت چاپ و با استفاده از طراحان گرافیک
+                                است.
+                            </p>
+                            <a href="#" class="button">بیشتر بدانید!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+        <section class="container-fluid second-section">
+            <div class="swiper mySwiper swiperSecond">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide  my-5">
+                        <img src="IMAGES/6_orig.jpg" alt="..." class="w-100">
+                        <div class="text-box col-sm-4 pink-bg">
+                            <p class="first-p">فروش ویژه لوازم خانگی</p>
+                            <p>همین حالا برای خرید اقدام کنید… </p>
+                            <a href="#" class="button">بیشتر بدانید!</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide  my-5">
+                        <img src="IMAGES/5_orig.jpg" alt="..." class="w-100">
+                        <div class="text-box blue-bg">
+                            <p class="first-p">فروش ویژه لوازم خانگی</p>
+                            <p>همین حالا برای خرید اقدام کنید… </p>
+                            <a href="#" class="button">بیشتر بدانید!</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide  my-5">
+                        <img src="IMAGES/4_orig.jpg" alt="..." class="w-100">
+                        <div class="text-box green-bg">
+                            <p class="first-p">فروش ویژه لوازم خانگی</p>
+                            <p>همین حالا برای خرید اقدام کنید… </p>
+                            <a href="#" class="button">بیشتر بدانید!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next  d-block d-md-none"></div>
+                <div class="swiper-button-prev  d-block d-md-none"></div>
+            </div>
+        </section>
+        <section class="container-fluid third-section px-5">
+            <h3 class="text-white text-center mb-5 pt-5 pb-3">اسنو کالا، یک خرید راحت و مطمئن</h3>
+            <div class="swiper mySwiper second-swiper pb-5">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide d-flex flex-column">
+                        <img src="IMAGES/یخچال-و-فریزر.jpg" alt="...">
+                        <div class="bg-white mt-3 w-100 blue-hover">
+                            <p>
+                                <a href="#">یخچال و فریزر</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex flex-column">
+                        <img src="IMAGES/صوتی-و-تصویری.jpg" alt="...">
+                        <div class="bg-white mt-3 w-100 blue-hover">
+                            <p>
+                                <a href="#">صوتی و تصویری</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex flex-column">
+                        <img src="IMAGES/ماشین-ظرفشویی.jpg" alt="...">
+                        <div class="bg-white mt-3 w-100 blue-hover">
+                            <p>
+                                <a href="#">ماشین ظرفشویی</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex flex-column">
+                        <img src="IMAGES/اجاق-گاز.jpg" alt="...">
+                        <div class="bg-white mt-3 w-100 blue-hover">
+                            <p>
+                                <a href="#">اجاق گاز</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex flex-column">
+                        <img src="IMAGES/ماشین-لباسشویی.jpg" alt="...">
+                        <div class="bg-white mt-3 w-100 blue-hover">
+                            <p>
+                                <a href="#">ماشین لباسشویی</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex flex-column">
+                        <img src="IMAGES/کولر گازی.jpg" alt="...">
+                        <div class="bg-white mt-3 w-100 blue-hover">
+                            <p>
+                                <a href="#">کولر گازی</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex flex-column">
+                        <img src="IMAGES/جاروبرقی.jpg" alt="...">
+                        <div class="bg-white mt-3 w-100 blue-hover">
+                            <p>
+                                <a href="#">جاروبرقی</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+        <section class="container-fluid fourth-section mb-5">
+            <div class="container">
+                <h6 class="my-4">لوازم خانگی بزرگ</h6>
+                <div class="swiper mySwiper second-swiper pb-5">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/یخچال-و-فریزر-ساید-بای-ساید-دوو-مدل-D2S-1033MW.png" alt="..."
+                                class="fridge">
+                            <div class="mt-2 border-before">
+                                <p class="py-2 text-center">
+                                    یخچال و فریزر ساید بای ساید دوو مدل D2S-1033MW
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/صوتی-و-تصویری.jpg" alt="..." class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    یخچال و فریزر ساید بای ساید دوو مدل D2S-1033MW
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/ماشین-ظرفشویی.jpg" alt="..." class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    یخچال و فریزر ساید بای ساید دوو مدل D2S-1033MW
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide z-3 d-flex flex-column">
+                            <img src="IMAGES/اجاق-گاز.jpg" alt="..." class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    یخچال و فریزر ساید بای ساید دوو مدل D2S-1033MW
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/ماشین-لباسشویی.jpg" alt="..." class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    یخچال و فریزر ساید بای ساید دوو مدل D2S-1033MW
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/کولر گازی.jpg" alt="..." class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    یخچال و فریزر ساید بای ساید دوو مدل D2S-1033MW
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/جاروبرقی.jpg" alt="..." class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    یخچال و فریزر ساید بای ساید دوو مدل D2S-1033MW
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <h6 class="my-4">صوتی و تصویری</h6>
+                <div class="swiper mySwiper second-swiper pb-5">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/تلویزیون-ال-ای-دی-هوشمند-اسنوا-مدل-SSD-55SA620U-سایز-55-اینچ.png" alt="..."
+                                class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    تلویزیون ال ای دی هوشمند دوو مدل DLE-32H1810 سایز 32 اینچ
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/تلویزیون-ال-ای-دی-هوشمند-اسنوا-مدل-SSD-55SA620U-سایز-55-اینچ.png" alt="..."
+                                class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    تلویزیون ال ای دی هوشمند دوو مدل DLE-32H1810 سایز 32 اینچ
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/تلویزیون-ال-ای-دی-هوشمند-دوو-مدل-DLE-50K4410U-سایز-50-اینچ.png" alt="..."
+                                class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    تلویزیون ال ای دی هوشمند دوو مدل DLE-32H1810 سایز 32 اینچ
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide z-3 d-flex flex-column">
+                            <img src="IMAGES/تلویزیون-ال-ای-دی-هوشمند-دوو-مدل-DLE-50K4410U-سایز-50-اینچ.png" alt="..."
+                                class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    تلویزیون ال ای دی هوشمند دوو مدل DLE-32H1810 سایز 32 اینچ
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/تلویزیون65-اینچ-اسمارت-4K-اسنوا-مدل-SSD-65SA620U.png" alt="..."
+                                class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    تلویزیون ال ای دی هوشمند دوو مدل DLE-32H1810 سایز 32 اینچ
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/تلویزیون65-اینچ-اسمارت-4K-اسنوا-مدل-SSD-65SA620U.png" alt="..."
+                                class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    تلویزیون ال ای دی هوشمند دوو مدل DLE-32H1810 سایز 32 اینچ
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/تلویزیون65-اینچ-اسمارت-4K-اسنوا-مدل-SSD-65SA620U.png" alt="..."
+                                class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    تلویزیون ال ای دی هوشمند دوو مدل DLE-32H1810 سایز 32 اینچ
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <h6 class="my-4">اجاق گاز</h6>
+                <div class="swiper mySwiper second-swiper pb-5">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/اجاق-گاز-آترینا-اسنوا-مدل-SGC5-5112N-سفید.jpg" alt="..." class="w-75">
+                            <div class="mt-2 border-before">
+                                <p class="py-2 text-center">
+                                    اجاق گاز دوو مدل DGC5-2101N
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/اجاق-گاز-آترینا-اسنوا-مدل-SGC5-5112N-سفید.jpg" alt="..." class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    اجاق گاز دوو مدل DGC5-2101N
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/اجاق-گاز-آترینا-اسنوا-مدل-SGC5-5112N-سفید.jpg" alt="..." class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    اجاق گاز دوو مدل DGC5-2101N
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide z-3 d-flex flex-column">
+                            <img src="IMAGES/اجاق-گاز-دوو-مدل-DGC5-2111N-New-Imperial.jpg" alt="..." class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    اجاق گاز دوو مدل DGC5-2101N
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/اجاق-گاز-دوو-مدل-DGC5-2111N-New-Imperial.jpg" alt="..." class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    اجاق گاز دوو مدل DGC5-2101N
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/اجاق-گاز-آترینا-اسنوا-مدل-SGC5-5112N-سفید.jpg" alt="..." class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    اجاق گاز دوو مدل DGC5-2101N
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/اجاق-گاز-آترینا-اسنوا-مدل-SGC5-5112N-سفید.jpg" alt="..." class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    اجاق گاز دوو مدل DGC5-2101N
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid fifth-section">
+            <div class="container mt-4 pt-5">
+                <h6 class="my-5">لوازم خانگی بزرگ</h6>
+                <div class="swiper mySwiper second-swiper pb-5">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/اجاق-گاز-آترینا-اسنوا-مدل-SGC5-5112N-سفید.jpg" alt="..." class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    اجاق گاز دوو مدل DGC5-2101N
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/اجاق-گاز-آترینا-اسنوا-مدل-SGC5-5112N-سفید.jpg" alt="..." class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    اجاق گاز دوو مدل DGC5-2101N
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/اجاق-گاز-آترینا-اسنوا-مدل-SGC5-5112N-سفید.jpg" alt="..." class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    اجاق گاز دوو مدل DGC5-2101N
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide z-3 d-flex flex-column">
+                            <img src="IMAGES/اجاق-گاز-دوو-مدل-DGC5-2111N-New-Imperial.jpg" alt="..." class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    اجاق گاز دوو مدل DGC5-2101N
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/اجاق-گاز-دوو-مدل-DGC5-2111N-New-Imperial.jpg" alt="..." class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    اجاق گاز دوو مدل DGC5-2101N
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/اجاق-گاز-آترینا-اسنوا-مدل-SGC5-5112N-سفید.jpg" alt="..." class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    اجاق گاز دوو مدل DGC5-2101N
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/اجاق-گاز-آترینا-اسنوا-مدل-SGC5-5112N-سفید.jpg" alt="..." class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    اجاق گاز دوو مدل DGC5-2101N
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <h6 class="my-4">صوتی و تصویری</h6>
+                <div class="swiper mySwiper second-swiper pb-5">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/اجاق-گاز-آترینا-اسنوا-مدل-SGC5-5112N-سفید.jpg" alt="..." class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    اجاق گاز دوو مدل DGC5-2101N
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/اجاق-گاز-آترینا-اسنوا-مدل-SGC5-5112N-سفید.jpg" alt="..." class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    اجاق گاز دوو مدل DGC5-2101N
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/اجاق-گاز-آترینا-اسنوا-مدل-SGC5-5112N-سفید.jpg" alt="..." class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    اجاق گاز دوو مدل DGC5-2101N
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide z-3 d-flex flex-column">
+                            <img src="IMAGES/اجاق-گاز-دوو-مدل-DGC5-2111N-New-Imperial.jpg" alt="..." class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    اجاق گاز دوو مدل DGC5-2101N
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/اجاق-گاز-دوو-مدل-DGC5-2111N-New-Imperial.jpg" alt="..." class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    اجاق گاز دوو مدل DGC5-2101N
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/اجاق-گاز-آترینا-اسنوا-مدل-SGC5-5112N-سفید.jpg" alt="..." class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    اجاق گاز دوو مدل DGC5-2101N
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex flex-column">
+                            <img src="IMAGES/اجاق-گاز-آترینا-اسنوا-مدل-SGC5-5112N-سفید.jpg" alt="..." class="w-75">
+                            <div class="mt-3 border-before">
+                                <p class="py-2 text-center">
+                                    اجاق گاز دوو مدل DGC5-2101N
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid sixth-section my-3 py-4 ">
+            <div class="container">
+                <div class="swiper mySwiper thirdSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide border-5">
+                            <img src="IMAGES/دوو.png" alt="brand">
+                        </div>
+                        <div class="swiper-slide border-5">
+                            <img src="IMAGES/دوو.png" alt="brand">
+                        </div>
+                        <div class="swiper-slide border-5">
+                            <img src="IMAGES/دوو.png" alt="brand">
+                        </div>
+                        <div class="swiper-slide border-5">
+                            <img src="IMAGES/دوو.png" alt="brand">
+                        </div>
+                        <div class="swiper-slide border-5">
+                            <img src="IMAGES/دوو.png" alt="brand">
+                        </div>
+                        <div class="swiper-slide border-5">
+                            <img src="IMAGES/دوو.png" alt="brand">
+                        </div>
+                        <div class="swiper-slide border-5">
+                            <img src="IMAGES/دوو.png" alt="brand">
+                        </div>
+                        <div class="swiper-slide border-5">
+                            <img src="IMAGES/دوو.png" alt="brand">
+                        </div>
+                        <div class="swiper-slide border-5">
+                            <img src="IMAGES/دوو.png" alt="brand">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid seventh-section">
+            <div class="text-center">
+                <h6>اولین نفری باشید که از جدیدترین محصولات، جشنواره‌ها و فروش‌های ویژه ما مطلع <br> می‌شوید.</h6>
+                <div class="input-group mt-3 pb-3">
+                    <input type="email" class="form-control" placeholder="" aria-label="Example text with button addon"
+                        aria-describedby="button-addon1" name="email" id="email">
+                    <button class="btn" type="button" id="button-addon1">ثبت ایمیل</button>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid eighth-section">
+            <div class="container">
+                <div class="swiper mySwiper lastSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide d-flex flex-column mt-3 py-3">
+                            <div>
+                                <img src="IMAGES/تضمین-بهترین-قیمت.png" alt="...">
+                            </div>
+                            <div class="brd-bottom">
+                                <p class=" pt-2">
+                                    <a href="#" class="link-light text-end d-inline-block">تضمین بهترین قیمت</a>
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide d-flex flex-column mt-3 py-3 b-white">
+                            <div>
+                                <img src="IMAGES/تضمین-اصالت-کالا.png" alt="...">
+                            </div>
+                            <div class="brd-bottom">
+                                <p class="text-center pt-2">
+                                    <a href="#" class="link-light text-end d-inline-block">تضمین اصالت کالا</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex flex-column mt-3 py-3 b-white">
+                            <div>
+                                <img src="IMAGES/پشتیبانی-کالا.png" alt="...">
+                            </div>
+                            <div class="brd-bottom">
+                                <p class="text-center pt-2">
+                                    <a href="#" class="link-light text-end d-inline-block">پشتیبانی کالا</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next d-block d-md-none"></div>
+                    <div class="swiper-button-prev d-block d-md-none"></div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="row col-12 col-md-8 py-4 text-white">
+                <div class="col-12 col-md-3 col-sm-2">
+                    <ul>
+                        <li>
+                            <h5>لوازم خانگی </h5>
+                        </li>
+                        <li>
+                            <a href="#">تلویزیون</a>
+                        </li>
+                        <li>
+                            <a href="#">یخچال و فریزر</a>
+                        </li>
+                        <li>
+                            <a href="#">ماشین ظرفشویی</a>
+                        </li>
+                        <li>
+                            <a href="#">ماشین لباسشویی</a>
+                        </li>
+                        <li>
+                            <a href="#">جاروبرقی</a>
+                        </li>
+                        <li>
+                            <a href="#">اجاق گاز</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 col-sm-2">
+                    <ul>
+                        <li>
+                            <h5>صوتی و تصویری </h5>
+                        </li>
+                        <li>
+                            <a href="#">تلویزیون</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 col-sm-2">
+                    <ul>
+                        <li>
+                            <h5> راهنمای خرید از اسنو کالا</h5>
+                        </li>
+                        <li><a href="#">نحوه ثبت سفارش</a></li>
+                        <li><a href="#">رویه ارسال سفارش</a></li>
+                        <li><a href="#">شیوه های پرداخت</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 col-sm-2">
+                    <ul>
+                        <li>
+                            <h5>درباره ما </h5>
+                        </li>
+                        <li><a href="#">پاسخ به پرسش متداول</a></li>
+                        <li><a href="#">رویه های بازگرداندن کالا</a></li>
+                        <li><a href="#">شرایط استفاده</a></li>
+                        <li><a href="#">حریم خصوصی</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-4  text-white">
+               
+                    <div class="d-flex py-1">
+                        <a href="#">
+                            <img src="IMAGES/فروشگاه-اسنو-کالا.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="d-flex py-1">
+                        <i class="bi bi-geo-alt pe-2"></i>
+                        <p>تهران، سه راه امین حضور، خیابان <br>امیرکبیر، نبش کوچه جاویدی، پلاک 138</p>
+                    </div>
+                    <div class="d-flex py-1">
+                        <i class="bi bi-telephone pe-2"></i>
+                        <p>تلفن:   ۳۳۵۶۱۵۲۶ ۰۲۱</p>
+                    </div>
+                    <div class="d-flex py-1">
+                        <i class="bi bi-telephone pe-2"></i>
+                        <p>موبایل:   ۰۹۳۵۱۰۰۴۲۰۷</p>
+                    </div>
+                    <div class="d-flex py-1">
+                        <i class="bi bi-envelope pe-2"></i>
+                        <p>ایمیل:    info@snowkala.com</p>
+                    </div>
+                    <div>
+                        <p>در شبکه های اجتماعی ما را دنبال کنید.
+                        </p>
+                    </div>
+                    <div class="d-flex social-icons py-1">
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-telegram"></i>
+                        <i class="bi bi-whatsapp"></i>
+                        <i class="bi bi-linkedin"></i>
+                    </div>
+                
+            </div>
+        </div>
+       <a href="#" class="up scroll-top">
+            <i class="bi bi-chevron-up"></i>
+        </a>
+    </footer>
+
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
